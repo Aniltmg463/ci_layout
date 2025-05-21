@@ -9,14 +9,15 @@
     <link rel="stylesheet" href="<?= base_url('css/style.css') ?>">
 </head>
 
+<body>
+    <header class="bg-primary text-white p-3">
+        <div class="container">
 
-<header class="bg-primary text-white p-3">
-    <div class="container">
-        <h1>My Simple CI4 Layout</h1>
-        <nav class="nav">
-            <a class="nav-link text-white" href="<?= base_url('/') ?>">Home</a>
-            <a class="nav-link text-white" href="<?= base_url('/about') ?>">About</a>
-            <a class="nav-link text-white" href="<?= base_url('/contact') ?>">About</a>
-        </nav>
-    </div>
-</header>
+            <nav class="nav ms-auto justify-content-end">
+                <a class="nav-link text-white" href="<?= base_url('/') ?>">Home</a>
+                <a class="nav-link text-white" href="<?= base_url('/about') ?>">About</a>
+                <a class="nav-link text-white" href="<?= base_url('/contact') ?>">About</a>
+            </nav>
+        </div>
+    </header>
+    <div class="d-flex flex-column min-vh-100">
