@@ -16,4 +16,17 @@ class Home extends BaseController
     {
         return view('Pages/contact');
     }
+    public function signup(): string
+    {
+        return view('Pages/signup');
+    }
+
+    public function login(): string
+    {
+        return view('Pages/login');
+    }
+    public function dashboard(): string
+    {
+        return view('Pages/dashboard');
+    }
 }

@@ -4,7 +4,7 @@ namespace App\Database\Migrations;
 
 use CodeIgniter\Database\Migration;
 
-class Admin extends Migration
+class Users extends Migration
 {
     public function up()
     {
@@ -31,18 +31,13 @@ class Admin extends Migration
                 'type' => 'VARCHAR',
                 'constraint' => '100',
             ],
-            'user_type' => [
-                'type' => 'ENUM("admin","user")',
-                'default' => 'user',
-                'null' => false,
-            ],
         ]);
         $this->forge->addKey('id', true);
-        $this->forge->createTable('admin');
+        $this->forge->createTable('users');
     }
 
     public function down()
     {
-        $this->forge->dropTable('admin');
+        $this->forge->dropTable('users');
     }
 }

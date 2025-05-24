@@ -6,7 +6,9 @@
     <title><?= $this->renderSection('pagetitle') ?></title>
     <!-- Bootstrap 5 CSS CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="<?= base_url('css/style.css') ?>">
+
+    <link rel="stylesheet" href="<?= base_url('assets/style.css') ?>">
+
 </head>
 
 <body>
@@ -17,6 +19,8 @@
                 <a class="nav-link text-white" href="<?= base_url('/') ?>">Home</a>
                 <a class="nav-link text-white" href="<?= base_url('/about') ?>">About</a>
                 <a class="nav-link text-white" href="<?= base_url('/contact') ?>">About</a>
+                <a class="nav-link text-white" href="<?= base_url('/signup') ?>">Sign Up</a>
+                <a class="nav-link text-white" href="<?= base_url('/login') ?>">Login</a>
             </nav>
         </div>
     </header>
